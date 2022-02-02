@@ -53,6 +53,8 @@ const Works = () => (
           </WorkGridItem>
         </Section>
 
+        <Divider />
+
       </SimpleGrid>
     </Container>
   </Layout>

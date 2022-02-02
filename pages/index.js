@@ -28,7 +28,7 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        Hello, I&apos;m a .net / full-stack developer based in Turkey! (Merhaba Dünya)
+        Hello, I am a .net / full-stack developer based in Turkey! (Merhaba Dünya)
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -63,7 +63,7 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-        My name is Şenol DİNÇ and i'm a software developer since 2010 based on Turkey.
+        My name is Şenol DİNÇ and i am a software developer since 2010 based on Turkey.
         I am allways passionate about the learning new things and currius how to work.
         </Paragraph>
         <Paragraph>
@@ -131,7 +131,7 @@ processes of business, smart intelligence, social media projects.
           <BioYear>2018 to present</BioYear>
           Software Engineer, Ayen Software
           <Paragraph>
-          Providing with local and foreign market places customer's price, stock,
+          Providing with local and foreign market places customers price, stock,
 order and delivery integration
           </Paragraph>
         </BioSection>
