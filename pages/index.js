@@ -5,7 +5,6 @@ import {
   Heading,
   Box,
   Image,
-  SimpleGrid,
   Button,
   List,
   ListItem,
@@ -17,10 +16,7 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import { IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5'
 
 const Home = () => (
   <Layout>
@@ -32,15 +28,15 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        Hello, I&apos;m a full-stack developer based in Japan!
+        Hello, I&apos;m a .net / full-stack developer based in Turkey! (Merhaba Dünya)
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            Senol Dinc
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Senior Software Developer </p>
         </Box>
         <Box
           flexShrink={0}
@@ -53,9 +49,10 @@ const Home = () => (
             borderWidth={2}
             borderStyle="solid"
             maxWidth="100px"
+            maxHeight="100px"
             display="inline-block"
             borderRadius="full"
-            src="/images/takuya.jpg"
+            src="/images/senol.jpeg"
             alt="Profile image"
           />
         </Box>
@@ -66,16 +63,15 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <NextLink href="/works/inkdrop">
-            <Link>Inkdrop</Link>
-          </NextLink>
-          .
+        My name is Şenol DİNÇ and i'm a software developer since 2010 based on Turkey.
+        I am allways passionate about the learning new things and currius how to work.
+        </Paragraph>
+        <Paragraph>
+        I believe that this mindset, in combination with a strong fascination of computers and technology in general, 
+        has put me on a path towards software development. 
+        I thoroughly enjoy solving problems with code and I feel entitled to be able to work with what 
+        I consider to be my biggest interest.
+        I am driven by a will to learn and to challenge myself with the idea that there is always a better solution out there.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works">
@@ -88,25 +84,56 @@ const Home = () => (
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Bio
+          PROJECTS
+        </Heading>
+        <BioSection>AYEN SOFTWARE Marketing Mobile and Web Application</BioSection>
+        <BioSection>AYEN SOFTWARE domestic and international market place integrations.</BioSection>
+        <BioSection>WİNSOFT WEB. In the software development processes of all the health processes and administrative processes of the hospital information management system project</BioSection>
+        <BioSection>WİNSOFT WEB. Abroad private hospitals project</BioSection>
+        <BioSection>WİNSOFT Public hospitals association project</BioSection>
+        <BioSection>WİNSOFT Laboratory Information System</BioSection>
+        <BioSection>MEDİPORTAL Quality management system project</BioSection>
+        <BioSection>Start-up attempt projects and online Crm software</BioSection>
+        <BioSection>Order, Stock, Service, Warehouse, Production Tracking Software</BioSection>
+        <BioSection>Service and performance tracking software for vehicle companies</BioSection>
+      </Section>
+
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Work Experience
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>2010-2013</BioYear>
+          Software Developer, C Shark Software
+          <Paragraph>
+          I was involved in all the configuring, editing and software processes of the projects taken within the company.
+          </Paragraph>
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>2013-2014</BioYear>
+          Software Developer, ZDN Group IT
+          <Paragraph>
+          I was responsible for the management, editing and development
+processes of business, smart intelligence, social media projects.
+          </Paragraph>
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
+          <BioYear>2014-2018</BioYear>
+          Software Developer, Prestij Software
+          <Paragraph>
+            Transferring the hospital management system to the web environment.
+          </Paragraph>
+          <Paragraph>
+            Research and development
+          </Paragraph>
         </BioSection>
         <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Works as a freelance
+          <BioYear>2018 to present</BioYear>
+          Software Engineer, Ayen Software
+          <Paragraph>
+          Providing with local and foreign market places customer's price, stock,
+order and delivery integration
+          </Paragraph>
         </BioSection>
       </Section>
 
@@ -115,15 +142,7 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+         Traveling, researching, football, basketball, discovering, swimming.
         </Paragraph>
       </Section>
 
@@ -133,67 +152,31 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/senoldinc" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >
-                @craftzdog
+                @senoldinc
               </Button>
             </Link>
           </ListItem>
+         
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <Link href="https://www.linkedin.com/in/snldnc" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<Icon as={IoLogoTwitter} />}
+                leftIcon={<Icon as={IoLogoLinkedin} />}
               >
-                @inkdrop_app (English)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoTwitter} />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoInstagram} />}
-              >
-                @craftzdog
+                @snldnc
               </Button>
             </Link>
           </ListItem>
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid>
+      
 
         <Box align="center" my={4}>
           <NextLink href="/posts">
