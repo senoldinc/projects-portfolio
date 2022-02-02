@@ -25,7 +25,7 @@ const Works = () => (
         <Section>
           <WorkGridItem
             id="https://snldnc-corona-tracker-app.netlify.app/"
-            title="Covid 19 Tracker"
+            title="Covid-19 Tracker"
             thumbnail={thumbCorona}
           >
             Covid 19 tracker app
